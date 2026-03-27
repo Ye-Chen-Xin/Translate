@@ -1,0 +1,9 @@
+ g++ click_02.cpp -o ocr02 \
+    -I/opt/homebrew/include \
+    -I/opt/homebrew/include/opencv4 \
+    -L/opt/homebrew/lib \
+    -ltesseract -lleptonica \
+    -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_imgcodecs \
+    -framework ApplicationServices -framework Carbon \
+    -std=c++17
+./ocr02
